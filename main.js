@@ -32,14 +32,12 @@ function addLeadingZero(number){
 
 var dagNacht = today.getHours();
 
-function dagNacht(dagNacht) {
   if (dagNacht > 7 && dagNacht <= 19){
-    document.getElementById('afb').src = "zon.png";
-
+  //  document.getElementById('afb').src = "zon.png";
+    document.getElementsByTagName('body')[0].style.backgroundImage = "url('zon.png')";
   } else {
     document.getElementById('afb').src = "maan.png";
   }
-}
 
 
 // function change(){
