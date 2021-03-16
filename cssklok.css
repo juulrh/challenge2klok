@@ -3,7 +3,8 @@ body {
   color: pink;
   background-repeat: no-repeat;
   background-size: 100%;
-  margin-top: 30px
+  background-position: center;
+  height: 100vw;
 }
 
 h1 {
