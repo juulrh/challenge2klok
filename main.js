@@ -1,9 +1,8 @@
 
-
 //DATUM
 var today2 = new Date();
 document.getElementById('datum').innerHTML = today2.getDate() + '/' + (today2.getMonth()+1);
-// This Month
+
 var maanden = new Array('Januari', 'Februari', 'Maart', 'April', 'Mei', 'Juni', 'Juli', 'Augustus', 'September', 'Oktober', 'November', 'December');
 
 document.getElementById('datum').innerHTML = today2.getDate() + ' ' + maanden[today2.getMonth()] + ' ' + today2.getFullYear();
@@ -30,27 +29,17 @@ function addLeadingZero(number){
   }
     return number;
 }
-// AFB maan/zon veranderen
 
+// AFB maan/zon veranderen
 
 var dagNacht = today.getHours();
 
   if (dagNacht > 6 && dagNacht <= 18){
   //  document.getElementById('afb').src = "zon.png";
     document.getElementsByTagName('body')[0].style.backgroundImage = "url('zon.png')";
-    document.body.style.backgroundPosition = "center";
+    document.body.style.backgroundColor = 'white';
   } else {
     document.getElementsByTagName('body')[0].style.backgroundImage = "url('maan.png')";
+    document.body.style.backgroundColor = 'black';
+
   }
-
-
-// function change(){
-//   var nu = new Date();
-//   var dagnacht = rightNow.getHours();
-//
-//   if (dagnacht > 6 && dagnacht <= 18){
-//     document.getElementById("afb").src = "zon.png";
-//   } else {
-//     document.getElementById("afb").src = "maan.png";
-//   }
-// }
