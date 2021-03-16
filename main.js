@@ -7,10 +7,11 @@ var maanden = new Array('Januari', 'Debruari', 'Maart', 'April', 'Mei', 'Juni', 
 
 document.getElementById('datum').innerHTML = today2.getDate() + ' ' + maanden[today2.getMonth()] + ' ' + today2.getFullYear();
 
+var today = new Date();
 
 function startTime(){
 //tijd opzoeken
-  var today = new Date();
+  today = new Date();
 
   var seconds = addLeadingZero(today.getSeconds());
   var minutes = addLeadingZero(today.getMinutes());
