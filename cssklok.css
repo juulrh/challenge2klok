@@ -1,0 +1,22 @@
+body {
+  font-family: Poppins;
+  color: pink;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 500px;
+  font-size: 120px;
+  color: white;
+  position: relative;
+}
+.container {
+  background-color: black;
+  width: 60%;
+  margin-left: 200px;
+}
+.image {
+  width: 100%;
+  margin-top: -650px;
+  margin-left: 15px;
+}
