@@ -32,7 +32,7 @@ body {
 }
 
 /* css mobiel */
-#klok {
+.klok {
   margin-top: -3vw;
   font-size: 14vw;
   text-align: center;
@@ -40,7 +40,7 @@ body {
   text-shadow: 0 10px black;
 }
 
-#datum {
+.datum {
   width: 50vw;
   color: black;
   font-size: 7vw;
@@ -50,10 +50,9 @@ body {
   background-color: lightgrey;
 }
 
-};
-
 /* tablet grootte design */
-@media (min-width: 768px) {
+
+/* @media (min-width: 768px) {
 
   .grid-container {
     display: grid;
@@ -62,9 +61,7 @@ body {
     grid-template-areas:
     'main1 main2'
     'main1 main2'
-  }
-.klok {
-  font-size: 10vw;
 }
 
-};
+
+} */

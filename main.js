@@ -35,7 +35,6 @@ function addLeadingZero(number){
 var dagNacht = today.getHours();
 
   if (dagNacht > 6 && dagNacht <= 18){
-  //  document.getElementById('afb').src = "zon.png";
     document.getElementsByTagName('body')[0].style.backgroundImage = "url('zon.png')";
     document.body.style.backgroundColor = 'white';
 
