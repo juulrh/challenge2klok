@@ -38,8 +38,9 @@ var dagNacht = today.getHours();
   //  document.getElementById('afb').src = "zon.png";
     document.getElementsByTagName('body')[0].style.backgroundImage = "url('zon.png')";
     document.body.style.backgroundColor = 'white';
+
   } else {
-    document.getElementsByTagName('body')[0].style.backgroundImage = "url('maan.png')";
+    document.getElementsByTagName('body')[0].style.backgroundImage = "url('maan2.png')";
     document.body.style.backgroundColor = 'black';
 
   }

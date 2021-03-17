@@ -1,4 +1,8 @@
+/*lettertype*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
+/* algemeen css */
 body {
   font-family: Poppins;
   color: pink;
@@ -8,30 +12,59 @@ body {
   height: 100vh;
 }
 
-h1 {
+/* mobile first design */
+.grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 2fr;
+    grid-template-areas:
+    'main1 main1'
+    'main2 main2'
+}
+
+/* containers  */
+.datum {
+  grid-area: main1;
+}
+
+.klok {
+  grid-area: main2;
+}
+
+/* css mobiel */
+#klok {
+  margin-top: -3vw;
+  font-size: 14vw;
   text-align: center;
-  margin-top: -20px;
-  font-size: 120px;
   color: white;
-  position: center;
-  text-shadow: 0 14px black;
-
-}
-.container {
-
-}
-.image {
-  width: 100%;
-  margin-top: -650px;
-  margin-left: 15px;
+  text-shadow: 0 10px black;
 }
 
 #datum {
+  width: 50vw;
   color: black;
-  font-size: 60px;
-  margin-left: 290px;
-  padding-top: 600px;
+  font-size: 7vw;
+  margin-left: 25vw;
+  margin-top: 65vw;
   font-weight: bold;
-  text-shadow: 0 8px white;
-
+  background-color: lightgrey;
 }
+
+};
+
+/* tablet grootte design */
+@media (min-width: 768px) {
+
+  .grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 2fr;
+    grid-template-areas:
+    'main1 main2'
+    'main1 main2'
+  }
+.klok {
+  font-size: 10vw;
+}
+
+};
