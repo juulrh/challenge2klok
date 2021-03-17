@@ -1,3 +1,8 @@
+//DAG
+var d = new Date();
+  var dagweek = new Array("zondag","maandag", "dinsdag","woensdag","donderdag","vrijdag","zaterdag");
+  var n = dagweek[d.getDay()];
+  document.getElementById("dag").innerHTML = n;
 
 //DATUM
 var today2 = new Date();
@@ -36,10 +41,12 @@ var dagNacht = today.getHours();
 
   if (dagNacht > 6 && dagNacht <= 18){
     document.getElementsByTagName('body')[0].style.backgroundImage = "url('zon.png')";
-    document.body.style.backgroundColor = 'white';
+    document.body.style.backgroundColor = 'lightblue';
+    document.getElementById("dn").innerHTML= "DAG";
 
   } else {
     document.getElementsByTagName('body')[0].style.backgroundImage = "url('maan2.png')";
     document.body.style.backgroundColor = 'black';
+    document.getElementById("dn").innerHTML= "NACHT";
 
   }
