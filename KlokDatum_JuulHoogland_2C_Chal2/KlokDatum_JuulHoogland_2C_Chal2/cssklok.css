@@ -70,6 +70,35 @@ body {
     font-weight: bolder;
 }
 
+@keyframes overloop {
+  from {color: black;}
+  to {color: white;}
+}
+
+#dn {
+  color: white;
+  animation-name: overloop;
+  animation-duration: 4s;
+}
+
+
+#raket {
+  width: 20%;
+	position: absolute;
+	top: 100px;
+	left: 20px;
+	animation: 800ms bewegen infinite alternate ease-in;
+}
+
+@keyframes bewegen {
+  0% {
+  	top: 20px;
+  }
+	100% {
+  	top: 60px;
+  }
+}
+
 /* TABLET grootte CSS */
 @media (min-width: 768px) {
 
